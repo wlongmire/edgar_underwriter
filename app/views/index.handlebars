@@ -1,0 +1,39 @@
+<h1>All Submissions</h1>
+<table class="table" id="submission_table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Submission No.</th>
+			<th>Agent Name</th>
+			<th>Agent Code</th>
+			<th>Rating</th>
+			<th>Quote</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	
+	{{#unless submissions}}
+		<tr>Loading Submission Data</tr>
+	{{else}}
+		{{#each submissions}}
+		<tr>
+			<th>{{id}}</th>
+			<th>{{SUBMISSION_NO}}</th>
+			<th>{{AGENT_NAME}}</th>
+			<th>{{AGENT_CODE}}</th>
+			<th>{{#if rating}} {{rating}} {{else}} Unrated {{/if}}</th>
+			<th>{{#if quote}} {{quote}} {{else}} Not Quoted {{/if}}</th>
+			<th><a href="/sub/{{id}}" class="btn btn-primary submit_button" data-id="{{id}}">Details</a> </th>
+		</tr>	
+		{{/each}}
+
+	{{/unless}}
+	
+</table>
+
+<script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script>
+	console.log($);
+	$('#submission_table').DataTable();
+	
+</script>

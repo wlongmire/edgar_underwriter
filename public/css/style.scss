@@ -1,0 +1,42 @@
+.rating_select {
+	 -webkit-appearance: menulist-button;
+    height: 33px;
+    font-size: 10pt;
+    width: 110px;
+}
+
+.rating_label {
+	font-size: 13pt;
+}
+
+.header {
+	position:fixed;
+	width:100%;
+	z-index:999;
+
+	.navbar-header {
+		width: 100%;
+	}
+}
+
+#nav {
+	margin-bottom: 0px;
+}
+
+#main_container {
+	padding-top: 70px;
+}
+
+.alert {
+	padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+}
+
+#comment_textbox {
+	padding: 5px;
+}
+
+.panel-title {
+	font-size: 13px;
+}

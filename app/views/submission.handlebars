@@ -1,0 +1,140 @@
+<h1>Submissions {{sub.id}}</h1>
+
+<div class="container">
+
+<div class="col-md-6">
+	{{#if sub.rating}}
+	<h3>Rated: <span class="label label-primary">{{sub.rating}}</span></h3>
+	{{/if}}
+</div>
+
+
+<div class="col-md-6">
+	{{#if sub.quote}}
+	<h3>Quoted: <span class="label label-primary">{{sub.quote}}</span></h3>
+	{{/if}}
+</div>
+<hr/>
+
+</div>
+
+<div class="container">
+<div class="col-md-6">
+	<h5>Agent Name: <span class="label label-default">{{sub.AGENT_NAME}}</span></h5> 
+	<h5>Agent Code: <span class="label label-default">{{sub.AGENT_CODE}}</span></h5> 
+	<h5>PARENT_AGENT_CODE: <span class="label label-default">{{sub.PARENT_AGENT_CODE}}</span> <h5>
+	<h5>PARENT_AGENT_NAME: <span class="label label-default">{{sub.PARENT_AGENT_NAME}}</span><h5>
+	<h5>BUSINESS_UNIT_NAME: <span class="label label-default">'{{sub.BUSINESS_UNIT_NAME}}</span><h5>
+	<h5>OPERATING_UNIT_NAME: <span class="label label-default">{{sub.OPERATING_UNIT_NAME}}</span><h5>
+	<h5>UNDERWRITER_NAME: <span class="label label-default">{{sub.UNDERWRITER_NAME}}</span><h5>
+	<h5>SUBMISSION_NO: <span class="label label-default">{{sub.SUBMISSION_NO}}</span><h5>
+	<h5>POL_NUM: <span class="label label-default">{{sub.POL_NUM}}</span><h5>
+	<h5>RENEWAL_FLAG: <span class="label label-default">{{sub.RENEWAL_FLAG}}</span><h5>
+	<h5>RECEIVED_COUNT: <span class="label label-default">{{sub.RECEIVED_COUNT}}</span><h5>
+	<h5>QUOTED_COUNT: <span class="label label-default">{{sub.QUOTED_COUNT}}</span><h5>
+	<h5>BOUND_COUNT: <span class="label label-default">{{sub.BOUND_COUNT}}</span><h5>
+	<h5>REJECT_COUNT: <span class="label label-default">{{sub.REJECT_COUNT}}</span><h5>
+	<h5>REJECT_AFTER_QUOTE_FLAG: <span class="label label-default">{{sub.REJECT_AFTER_QUOTE_FLAG}}</span><h5>
+	<h5>RECDTOQUOTETIME: <span class="label label-default">{{sub.RECDTOQUOTETIME}}</span><h5>
+	<h5>RECDTOQUOTETIME_BAND: <span class="label label-default">{{sub.RECDTOQUOTETIME_BAND}}</span><h5>
+	<h5>RECDTOREJECTTIME: <span class="label label-default">{{sub.RECDTOREJECTTIME}}</span><h5>
+	<h5>RECDTOREJECTTIME_BAND: <span class="label label-default">{{sub.RECDTOREJECTTIME_BAND}}</span><h5>
+	<h5>RECDTOPENDINGTIME: <span class="label label-default">{{sub.RECDTOPENDINGTIME}}</span><h5>
+	<h5>QUOTETOBOUNDTIME: <span class="label label-default">{{sub.QUOTETOBOUNDTIME}}</span><h5>
+	<h5>QUOTETOBOUNDTIME_BAND: <span class="label label-default">{{sub.QUOTETOBOUNDTIME_BAND}}</span><h5>
+	<h5>RECEIVED_DATE: <span class="label label-default">{{sub.RECEIVED_DATE}}</span><h5>
+	<h5>RECEIVED_MONTH: <span class="label label-default">{{sub.RECEIVED_MONTH}}</span><h5>
+	<h5>RECEIVED_DAY: <span class="label label-default">{{sub.RECEIVED_DAY}}</span><h5>
+	<h5>RECEIVED_YEAR: <span class="label label-default">{{sub.RECEIVED_YEAR}}</span><h5>
+	<h5>REJECTED_DATE: <span class="label label-default">{{sub.REJECTED_DATE}}</span><h5>
+	<h5>QUOTED_DATE: <span class="label label-default">{{sub.QUOTED_DATE}}</span><h5>
+	<h5>QUOTED_MONTH: <span class="label label-default">{{sub.QUOTED_MONTH}}</span><h5>
+	<h5>QUOTED_DAY: <span class="label label-default">{{sub.QUOTED_DAY}}</span><h5>
+	<h5>QUOTED_YEAR: <span class="label label-default">{{sub.QUOTED_YEAR}}</span><h5>
+	<h5>BOUND_DATE: <span class="label label-default">{{sub.BOUND_DATE}}</span><h5>
+	<h5>PENDING_DATE: <span class="label label-default">{{sub.PENDING_DATE}}</span><h5>
+	<h5>PENDING_AGING_DAYS: <span class="label label-default">{{sub.PENDING_AGING_DAYS}}</span><h5>
+	<h5>POLICY_PREMIUM: <span class="label label-default">{{sub.POLICY_PREMIUM}}</span><h5>
+	<h5>REJECT_REASON: <span class="label label-default">{{sub.REJECT_REASON}}</span><h5>
+	<h5>SUB_REJECT_REASON: <span class="label label-default">{{sub.SUB_REJECT_REASON}}</span><h5>
+	<h5>POL_EFF_DT: <span class="label label-default">{{sub.POL_EFF_DT}}</span><h5>
+	<h5>POL_EXP_DT: <span class="label label-default">{{sub.POL_EXP_DT}}</span><h5>
+	<h5>PREVIOUS_POLICY_NUM: <span class="label label-default">{{sub.PREVIOUS_POLICY_NUM}}</span><h5>
+</div>
+
+<div class="col-md-6">
+	<h5>BDP_RENEW_FLAG: <span class="label label-default">{{sub.BDP_RENEW_FLAG}}</span><h5>
+	<h5>PROGRAM: <span class="label label-default">{{sub.PROGRAM}}</span><h5>
+	<h5>PREMIUM_BAND: <span class="label label-default">{{sub.PREMIUM_BAND}}</span><h5>
+	<h5>CLAIM_COUNT: <span class="label label-default">{{sub.CLAIM_COUNT}}</span><h5>
+	<h5>LOSS_INCRD: <span class="label label-default">{{sub.LOSS_INCRD}}</span><h5>
+	<h5>LOSS_PAID: <span class="label label-default">{{sub.LOSS_PAID}}</span><h5>
+	<h5>EXP_INCRD: <span class="label label-default">{{sub.EXP_INCRD}}</span><h5>
+	<h5>EXP_PAID: <span class="label label-default">{{sub.EXP_PAID}}</span><h5>
+	<h5>QUOTED_PREMIUM: <span class="label label-default">{{sub.QUOTED_PREMIUM}}</span><h5>
+	<h5>USERROLE: <span class="label label-default">{{sub.USERROLE}}</span><h5>
+	<h5>INSURED_NAME: <span class="label label-default">{{sub.INSURED_NAME}}</span><h5>
+	<h5>UW_REGION: <span class="label label-default">{{sub.UW_REGION}}</span><h5>
+	<h5>MINIMUM_PREMIUM_FLAG: <span class="label label-default">{{sub.MINIMUM_PREMIUM_FLAG}}</span><h5>
+	<h5>MINIMUM_PREMIUM: <span class="label label-default">{{sub.MINIMUM_PREMIUM}}</span><h5>
+	<h5>MINIMUM_OVERRIDE_PREMIUM_FLAG: <span class="label label-default">{{sub.MINIMUM_OVERRIDE_PREMIUM_FLAG}}</span><h5>
+	<h5>MINIMUM_OVERRIDE_PREMIUM: <span class="label label-default">{{sub.MINIMUM_OVERRIDE_PREMIUM}}</span><h5>
+	<h5>AGENT_CONTACT: <span class="label label-default">{{sub.AGENT_CONTACT}}</span><h5>
+	<h5>ISSUE_DT: <span class="label label-default">{{sub.ISSUE_DT}}</span><h5>
+	<h5>INSURED_STATE: <span class="label label-default">{{sub.INSURED_STATE}}</span><h5>
+	<h5>ENDORSEMENT_PREMIUM: <span class="label label-default">{{sub.ENDORSEMENT_PREMIUM}}</span><h5>
+	<h5>UNDERWRITER_ASSISTANT: <span class="label label-default">{{sub.UNDERWRITER_ASSISTANT}}</span><h5>
+	<h5>QUOTE_START_DATE: <span class="label label-default">{{sub.QUOTE_START_DATE}}</span><h5>
+	<h5>RECEIVED_TO_EFF_DAY: <span class="label label-default">{{sub.RECEIVED_TO_EFF_DAY}}</span><h5>
+	<h5>QUOTED_PREMIUM_BAND: <span class="label label-default">{{sub.QUOTED_PREMIUM_BAND}}</span><h5>
+</div>
+
+</div>
+
+<hr/>
+
+<div class="rating_selectors panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Set Rating</h3>
+  </div>
+
+  <div class="panel-body">
+
+    <form action="/sub/{{sub.id}}/rating" method="post" id="rating_form">
+	
+		<select class="btn btn-primary rating_select" name="rating" form="rating_form">
+	  	<option value="" selected>Select Rating</option>
+	  	<option value="1">One</option>
+	  	<option value="2">Two</option>
+	  	<option value="3">Three</option>
+	  	<option value="4">Four</option>
+	  	<option value="5">Five</option>
+		</select>
+	
+		<input type="submit" type="button" class="btn btn-default" value="Save">
+	</form>
+  </div>
+
+</div>
+
+{{#if sub.rating}}
+
+<div class="rating_selectors panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Offer Quote</h3>
+  </div>
+  
+  <div class="panel-body">
+
+    <form action="/sub/{{sub.id}}/quote" method="post" id="quote_form">
+	
+		<input type="text" placeholder="Comment" id="comment_textbox" name="comment">
+		<input type="submit" type="button" class="btn btn-default" value="Submit Quote">
+
+
+	</form>
+  </div>
+
+</div>
+
+{{/if}}
